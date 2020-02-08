@@ -1,0 +1,324 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body, body *, html, ul, a, pre, div {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-left {
+    width: 300px;
+    height: 100vh;
+    background-color: #2d3436;
+    position: fixed;
+    background-image: url("https://demo.mikado-themes.com/onyx50/wp-content/uploads/2015/03/left-menu-background.jpg")
+}
+
+.navbar-left>.inner>.logo>a>img {
+    width: 200px;
+    margin: 50px 0 0 50px;
+}
+
+.navbar-left>.inner>div.nav-menu {
+    margin-top: 50px;
+}
+
+.navbar-left>.inner>div.nav-menu>ul>li {
+    list-style-type: none;
+    padding: 9px 0;
+}
+
+.navbar-left>.inner>div.nav-menu>ul>li>a, .navbar-left>.inner>.nav-menu>ul>li.open>div.nav-menu2>ul>li>a {
+    text-decoration: none;
+    /* Cursor-un menuda aktiv qalmasi ucun */
+    padding: 20px 50px;
+    box-sizing: border-box;
+    color: #f7f1e3;
+    font-size: medium;
+    transition: width 0.5s;
+}
+.navbar-left>.inner>div.nav-menu>ul>li a>span {
+    float: right;
+    padding-right: 40px;
+    color: #f7f1e3;
+}
+.navbar-left>.inner>div.nav-menu>ul>li.active>a {
+    color: #ff5252;
+}
+.navbar-left>.inner>div.nav-menu>ul>li>a:hover, .navbar-left>.inner>.nav-menu>ul>li.open>div.nav-menu2>ul>li>a:hover {
+    color: #ff5252;
+}
+
+.navbar-left>.inner>div.nav-menu>ul>li.open>div.nav-menu2 {
+    margin-top: 10px;
+}
+
+.navbar-left>.inner>div.nav-menu>ul>li.open>div.nav-menu2>ul>li {
+    padding: 5px 0;
+}
+
+.navbar-left>.inner>div.nav-menu>ul>li.open>div.nav-menu2>ul>li>a {
+    font-size: small;
+}
+
+.navbar-left>div.follow-us {
+    margin: 20px 0 0 50px;
+}
+
+.navbar-left>div.follow-us>p {
+    color: #f7f1e3;
+}
+.navbar-left>div.follow-us>ul {
+    margin-top: 20px;
+}
+.navbar-left>div.follow-us>ul>li {
+    float: left;
+    list-style-type: none;
+    color: #f7f1e3;
+    margin: 0 10px;
+}
+
+.navbar-left>div.follow-us>ul>li>a {
+    color: #f7f1e3;
+}
+
+.navbar-left>div.follow-us>ul>li>a:hover {
+    color: #222f3e;
+}
+
+.content {
+    max-width: 100%;
+    min-height: 100vh;
+    margin-left: 300px;
+}
+
+div.content>.product {
+    width: 330px;
+    height: 400px;
+    display: inline-block;
+    position: relative;
+}
+
+div.content>.product>.image {
+    height: 350px;
+    width: 330px;
+    position: relative;
+}
+
+div.content>.product>#picture1 {
+    background-size: cover;
+    background-color: none;
+    background-image: url("https://demo.mikado-themes.com/onyx50/wp-content/uploads/2015/04/s-img-orange-armchair-300x300.jpg")
+}
+
+div.content>.product>#picture2 {
+    background-size: cover;
+    background-color: none;
+    background-image: url("https://demo.mikado-themes.com/onyx50/wp-content/uploads/2015/04/s-img-wooden-dining-room-chair.jpg");
+}
+
+div.content>.product>#picture3 {
+    background-size: cover;
+    background-color: none;
+    background-image: url("https://demo.mikado-themes.com/onyx50/wp-content/uploads/2015/04/s-img-elegant-black-lamp.jpg");
+}
+
+div.content>.product>#picture4 {
+    background-size: cover;
+    background-color: none;
+    background-image: url("https://demo.mikado-themes.com/onyx50/wp-content/uploads/2015/04/s-img-wide-red-armchair.jpg");
+}
+
+div.content>.product>#picture5 {
+    background-size: cover;
+    background-color: none;
+    background-image: url("https://demo.mikado-themes.com/onyx50/wp-content/uploads/2015/04/s-img-office-chair.jpg");
+}
+
+div.content>.product>#picture6 {
+    background-size: cover;
+    background-color: none;
+    background-image: url("https://demo.mikado-themes.com/onyx50/wp-content/uploads/2015/04/s-img-white-rocking-chair.jpg");
+}
+
+div.content>.product>#picture7 {
+    background-size: cover;
+    background-color: none;
+    background-image: url("https://demo.mikado-themes.com/onyx50/wp-content/uploads/2015/04/s-img-elegant-brown-armchair.jpg");
+}
+
+div.content>.product>#picture8 {
+    background-size: cover;
+    background-color: none;
+    background-image: url("https://demo.mikado-themes.com/onyx50/wp-content/uploads/2015/04/s-img-garden-chair.jpg");
+}
+
+div.content>.product>#picture9 {
+    background-size: cover;
+    background-color: none;
+    background-image: url("https://demo.mikado-themes.com/onyx50/wp-content/uploads/2015/04/s-img-circular-table.jpg");
+}
+
+div.content>.product>#picture10 {
+    background-size: cover;
+    background-color: none;
+    background-image: url("https://demo.mikado-themes.com/onyx50/wp-content/uploads/2015/04/s-img-desk-lamp.jpg");
+}
+
+div.content>.product>.image>.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffdd;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-property: opacity;
+}
+
+div.content>.product>.image>.overlay:hover {
+    opacity: 0.7;
+}
+
+div.content>.product>.image>.overlay>a>span.plus-icon {
+    color: #ce0f3d;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    font-size: 36pt;
+}
+
+div.content>.product>.infoBox {
+    height: 50px;
+    width: 180px;
+    display: inline-block;
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+
+div.content>.product>.infoBox>a {
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 18px;
+    color: #706c61;
+}
+
+div.content>.product>.infoBox>a:hover>pre {
+    color: #d34e35;
+}
+
+div.content>.product>.infoBox>a>p {
+    color: #d34e35;
+    font-weight: bold;
+}
+
+div.content>.product>.infoBox>a>p>span {
+    text-decoration: line-through;
+    color: #393e46;
+    margin-right: 5px;
+}
+
+div.content>.product>a {
+    color: #706c61;
+}
+
+div.content>.product>a>div.button {
+    height: 50px;
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+}
+
+div.content>.product>a:hover>div.button {
+    background-color: #fd5e53;
+    color: #ffffdd;
+}
+
+div.content>.product>a>div.button>p {
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+div.content>.end {
+    background-color: #333333;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+div.content>.end>div.text {
+    width: 40%;
+    height: 150px;
+    margin-left: 50px;
+    display: inline-block
+}
+
+div.content>.end>div.text>a {
+    text-decoration: none;
+    color: #706c61;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 0 0px;
+}
+
+div.content>.end>div.text>a:hover>p {
+    color: #f1fcfc;
+}
+
+div.content>.end>.contact {
+    display: inline-block;
+    margin-left: 150px;
+}
+
+div.content>.end>div.contact>ul>li {
+    list-style: none;
+    float: left;
+}
+
+div.content>.end>div.contact>ul>li>a {
+    color: #bac7a7;
+    text-decoration: none;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+div.content>.end>div.contact>ul>li>a:hover {
+    color: #706c61;
+}
+
+div.content>.end>div.contact>ul>li>a>span {
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+div.content>.end>div.contact>ul>li>a:hover>span {
+    color: #f1fcfc;
+}
+
+div.content>a>div.top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    background-color: #272727;
+    bottom: 100px;
+    right: 50px;
+    border-radius: 10px;
+}
+
+div.content>a>div.top>p {
+    text-align: center;
+    color: #ce0f3d;
+    font-weight: bold;
+    padding: 14px 0;
+    box-sizing: border-box;
+    transition: color 0.7s;
+}
+
+div.content>a:hover>div.top>p {
+    color: #f1fcfc;
+    background-color: #ff7315;
+}
